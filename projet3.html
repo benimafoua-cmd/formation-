@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IESC - institut d'enseignement suprieur du Congo</title>
+    <!-- Liaison du fichier CSS -->
+    <link rel="stylesheet" href="projet3.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">IESC</a>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#filieres">Filières</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <h1>Bâtissez votre avenir numérique</h1>
+        <p>Découvrez nos formations de pointe adaptées aux exigences du marché technologique mondial.</p>
+        <div>
+            <a href="#filieres" class="btn">Découvrir nos filières</a>
+        </div>
+    </section>
+
+    <!-- FILIÈRES & DÉBOUCHÉS -->
+    <section id="filieres">
+        <h2 class="section-title">Nos Filières & Débouchés</h2>
+        <div class="filiere-container">
+            
+            <!-- Informatique -->
+            <div class="filiere-card" style="animation-delay: 0.1s;">
+                <div class="filiere-icon">💻</div>
+                <h3>Informatique</h3>
+                <p>Maîtrisez le développement logiciel, l'intelligence artificielle, l'analyse de données et la création d'applications web et mobiles de pointe.</p>
+                <div class="jobs-list">
+                    <h4>Débouchés :</h4>
+                    <ul>
+                        <li>Développeur Full-Stack</li>
+                        <li>Ingénieur DevOps</li>
+                        <li>Data Scientist</li>
+                        <li>Chef de projet IT</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Réseau -->
+            <div class="filiere-card" style="animation-delay: 0.3s;">
+                <div class="filiere-icon">🌐</div>
+                <h3>Réseaux & Cyber</h3>
+                <p>Apprenez à concevoir, sécuriser et administrer les infrastructures informatiques complexes et à défendre les systèmes contre les cybermenaces.</p>
+                <div class="jobs-list">
+                    <h4>Débouchés :</h4>
+                    <ul>
+                        <li>Administrateur Réseaux & Systèmes</li>
+                        <li>Expert en Cybersécurité</li>
+                        <li>Architecte Cloud</li>
+                        <li>Consultant Sécurité</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Télécom -->
+            <div class="filiere-card" style="animation-delay: 0.5s;">
+                <div class="filiere-icon">📡</div>
+                <h3>Télécommunications</h3>
+                <p>Plongez au cœur des technologies de communication : architectures 5G/6G, communications satellites, IoT (Internet des Objets) et fibre optique.</p>
+                <div class="jobs-list">
+                    <h4>Débouchés :</h4>
+                    <ul>
+                        <li>Ingénieur Télécoms & Réseaux</li>
+                        <li>Chef de projet Fibre / Mobile</li>
+                        <li>Architecte Solutions IoT</li>
+                        <li>Ingénieur Radiofréquences</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERIE PHOTO -->
+    <section id="galerie">
+        <h2 class="section-title">Vie de l'École</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Salle de classe">
+                <div class="gallery-overlay">Laboratoire de Code</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Serveurs">
+                <div class="gallery-overlay">Salle Serveurs & Réseaux</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Étudiants">
+                <div class="gallery-overlay">Travaux d'Équipe</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Remise de diplômes">
+                <div class="gallery-overlay">Cérémonie des Diplômes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULAIRE DE CONTACT (SIMULATION) -->
+    <section id="contact">
+        <h2 class="section-title">Demande d'Information</h2>
+        <div class="contact-wrapper">
+            <form id="trainingForm">
+                <div class="form-group">
+                    <label for="fullname">Nom complet</label>
+                    <input type="text" id="fullname" required placeholder="Ex: Jean Dupont">
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse Email</label>
+                    <input type="email" id="email" required placeholder="Ex: jean.dupont@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="filiereSelect">Filière d'intérêt</label>
+                    <select id="filiereSelect" required>
+                        <option value="" disabled selected>Choisissez une filière...</option>
+                        <option value="Informatique">Informatique</option>
+                        <option value="Réseau">Réseaux & Cyber</option>
+                        <option value="Télécom">Télécommunications</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre Message</label>
+                    <textarea id="message" required placeholder="Posez vos questions ici..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Envoyer ma demande</button>
+            </form>
+            
+            <!-- Message de validation simulé -->
+            <div id="successMessage" class="notification success"></div>
+        </div>
+    </section>
+
+    <!-- Liaison du fichier JavaScript -->
+    <script src="projet3.js"></script>
+</body>
+</html>
